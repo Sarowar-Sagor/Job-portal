@@ -7,7 +7,7 @@ const HotJobs = () => {
     const [search, setSearch] = useState('');
 
     useEffect(() => {
-        fetch(`http://localhost:3000/jobs?sort=${sort}&search=${search}`)
+        fetch(`https://job-portal-server-mu.vercel.app/jobs?sort=${sort}&search=${search}`)
             .then(res => res.json())
             .then(data => setJobs(data));
     }, [sort, search])
