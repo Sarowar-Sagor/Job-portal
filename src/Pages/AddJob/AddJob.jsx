@@ -14,31 +14,32 @@ const AddJob = () => {
         const formData = new FormData(e.target);
         const allData = Object.fromEntries(formData.entries());
         const { min, max, currency, ...newJob } = allData;
-        newJob.salaryRange = { min, max, currency };
+        newJob.salaryRange = { min: parseInt(min), max: parseInt(max), currency };
+        // console.log(min, max);
         newJob.responsibilities = newJob.responsibilities.split('\n');
         newJob.requirements = newJob.requirements.split('\n');
         // console.log(newJob);
 
-        fetch('https://job-portal-server-mu.vercel.app/jobs', {
+        fetch('http://localhost:3000/jobs', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
             },
             body: JSON.stringify(newJob)
         })
-        .then(res => res.json())
-        .then(data => {
-            if (data.insertedId) {
-                Swal.fire({
-                    position: "center",
-                    icon: "success",
-                    title: "Your job post has been added",
-                    showConfirmButton: false,
-                    timer: 1500
-                  });
-                  navigate('/myPostedJob');
-            }
-        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.insertedId) {
+                    Swal.fire({
+                        position: "center",
+                        icon: "success",
+                        title: "Your job post has been added",
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                    navigate('/myPostedJob');
+                }
+            })
     }
 
     return (
@@ -100,8 +101,8 @@ const AddJob = () => {
                             <span className="label-text">Salary Range</span>
                         </label>
                         <div className="flex gap-2">
-                            <input type="text" name="min" placeholder="Min" className="input input-bordered" required />
-                            <input type="text" name="max" placeholder="Max" className="input input-bordered" required />
+                            <input type="number" name="min" placeholder="Min" className="input input-bordered" required />
+                            <input type="number" name="max" placeholder="Max" className="input input-bordered" required />
                             <select name='currency' defaultValue={"Currency"} className="select bg-white w-full max-w-xs">
                                 <option disabled>Currency</option>
                                 <option>BDT</option>
@@ -145,7 +146,7 @@ const AddJob = () => {
                         <label className="label">
                             <span className="label-text">HR Email</span>
                         </label>
-                        <input type="email" defaultValue={user?.email} name="hr_email" className="input input-bordered" required />
+                        <input readOnly type="email" defaultValue={user?.email} name="hr_email" className="input input-bordered" required />
                     </div>
 
                     <div className="form-control">
