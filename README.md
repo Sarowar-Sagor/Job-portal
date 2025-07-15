@@ -16,11 +16,13 @@
 *   **Frontend:** React.js, Tailwind CSS, DaisyUI
 *   **Backend:** Node.js, Express.js
 *   **Database:** MongoDB
-*   **Deployment:** Vercel
+*   **Deployment:** Surge
 *   **Tools:** Firebase auth, Google Authentication, Git, VS code
 
-<!--
 ## 🚀 Getting Started
+**Live link:** [job_portal](https://modern-branch-job-portal.surge.sh/)
+<!--
+
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
