@@ -131,6 +131,6 @@ Feel free to reach out to me for collaborations, questions, or just to say hello
 
 ## 📄 License
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE.text) file for details.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
 ---
