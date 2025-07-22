@@ -29,10 +29,9 @@ const Banner = () => {
                      transition={{duration: 2, repeat: Infinity}}
                      >Job</motion.span> For You!</motion.h1>
                     <p className="py-6">
-                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                        quasi. In deleniti eaque aut repudiandae et a id nisi.
+                        The Job Portal is designed to bridge the gap between job seekers and employers. With an intuitive interface and comprehensive features, it allows users to effectively showcase their skills and connect with potential employers.
                     </p>
-                    <button className="btn btn-primary">Get Started</button>
+                    {/* <button className="btn btn-primary">Get Started</button> */}
                 </div>
             </div>
         </div>
