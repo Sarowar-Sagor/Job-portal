@@ -2,6 +2,11 @@
 
 ![Project Status](https://img.shields.io/badge/Status-Live-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+**![Frontend Deployed with Surge](https://img.shields.io/badge/Frontend_Deployed-Surge-21B072?logo=netlify&logoColor=white)** <!-- Changed badge -->
+![Backend Deployed with Vercel](https://img.shields.io/badge/Backend_Deployed-Vercel-black?logo=vercel)
+![Built with React](https://img.shields.io/badge/Built%20With-React-61DAFB?logo=react&logoColor=white)
+![Backend Node.js](https://img.shields.io/badge/Backend-Node.js-339933?logo=node.js&logoColor=white)
+![Database MongoDB](https://img.shields.io/badge/Database-MongoDB-47A248?logo=mongodb&logoColor=white)
 
 ---
 
@@ -66,9 +71,12 @@ The Job Portal is designed to bridge the gap between job seekers and employers. 
 ### Version Control
 - GitHub
 
-## 📦 Deployment
+## 🚀 Live Demos
 
-The application is live and can be accessed [here](https://modern-branch-job-portal.surge.sh/).
+Experience the application live!
+
+*   **Frontend (User Interface):** [Client](https://modern-branch-job-portal.surge.sh/)
+*   **Backend (API Server):** [Server](https://vercel.com/sarowar-sagors-projects/job-portal-server)
 
 ## 🚀 Getting Started
 
