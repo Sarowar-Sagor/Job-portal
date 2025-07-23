@@ -8,11 +8,11 @@
 **Official Name:** Job Portal  
 **Primary Purpose:** Showcase skills and connect with potential recruiters and clients.
 
-## Description
+## 📋 Description
 
 The Job Portal is designed to bridge the gap between job seekers and employers. With an intuitive interface and comprehensive features, it allows users to effectively showcase their skills and connect with potential employers. The portal offers functionalities that enable seamless job searching and application processes, catering to both applicants and employers.
 
-## Key Features
+## ✨ Key Features
 
 - **Authentication:**
   - Email/password login
@@ -37,7 +37,7 @@ The Job Portal is designed to bridge the gap between job seekers and employers. 
 - **Security:**
   - Secure session management using JWT tokens
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 ### Frontend
 - Tailwind CSS
@@ -66,11 +66,11 @@ The Job Portal is designed to bridge the gap between job seekers and employers. 
 ### Version Control
 - GitHub
 
-## Deployment
+## 📦 Deployment
 
 The application is live and can be accessed [here](https://modern-branch-job-portal.surge.sh/).
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -101,8 +101,9 @@ Before running this project, ensure you have the following installed:
 
    - Create a `.env.local` file in the `client` directory.
    - Add your Firebase configuration keys. These are prefixed with `VITE_` for use with the Vite build tool.
-   
-   ```env
+
+
+  ```env
    # Firebase Configuration
    VITE_API_KEY=<your_firebase_api_key>
    VITE_AUTH_DOMAIN=<your_firebase_auth_domain>
@@ -115,12 +116,14 @@ Before running this project, ensure you have the following installed:
 ### Running the Development Server
 
 1.  **Start the development server:**
+
     ```bash
     npm run dev
     # OR
     yarn dev
     ```
-2.  **Open your browser:**
+    
+3.  **Open your browser:**
     Visit `http://localhost:5173` to see your portfolio running locally.
 
 ## 📧 Contact
